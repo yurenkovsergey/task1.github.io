@@ -3,6 +3,17 @@
     padding: 0;
     margin: 0;
 }
+.clearfix:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+body {
+    font:400 14px/1.5 'Hind';
+    color: #565655;
+}
+
 ul{
     list-style: none;
 }
@@ -12,104 +23,69 @@ a{
 }
 a:hover{
     color: #bd2631;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
 }
 
-body {
-    font: 14px/1.5 'Hind';
-
-    /*margin: 0 auto*/
-}
-
-.border {
-    color: #565655;
-    /*padding: 10px 0;*/
-    max-width: 1128px;
-    margin: 0 auto;
-}
-
-header {
-
-    /*margin: 0 auto 15px;*/
-}
 .background1 {
     background: #ededed;
 }
-
-.clearfix:after {
-    content: '';
-    display: table;
-    width: 100%;
-    clear: both;
-}
-
 .address-block {
-    /*padding: 0;*/
+    padding-left:100px;
     float: left;
-    font-size: 16px;
-
-
+    font-size: 15px;
 }
-
-.address-block > div {
+.address-block  div {
     display: inline-block;
     margin-right: 25px;
-
-
-
 }
-
-
+.phone i, .address i{
+    font-size: 20px;
+    margin:0 5px;
+    font-weight: bold;
+    color: black;
+}
 .social {
     float: right;
-    padding: 4px;
+    padding: 4px 100px 0 0;
 }
-
 .social li {
     margin-left: 23px;
     display: inline-block;
 }
-
 .city {
-    padding: 6px 17px;
+    padding: 6px 10px;
     background: #000;
     color: #fff;
     border-radius: 3px;
 }
-
+.city i {
+    padding-left: 10px;
+    font-size: 20px;
+}
 .header-top {
     background: #ededed;
-    padding: 13px 0;
-
-
+    padding: 14px 0 12px;
 }
-.header-logo {
-    padding: 30px 0;
 
+/*logo*/
+.header-logo {
+    padding: 30px 100px 26px;
 }
 .second {
     float: right;
     display: block;
+    padding-top: 8px;
 }
-
 .second li {
     float: left;
     padding-right: 25px;
     border-right: 1px solid #e6e6e6;
     margin-right: 15px;
 }
-
 .second p {
     margin-top: 5px;
     padding-left: 10px;
     font-weight: normal;
     display: inline-block;
-
-
 }
 .second p > span {
     display: block;
@@ -120,61 +96,134 @@ header {
     font-weight: 600;
     font-size: 15px;
 }
-
 .second li p:first-of-type {
     float: left;
     margin-right: 5px;
     color: #000;
     font-size: 18px;
 }
-
-
 .second li:last-of-type {
     border-right: none;
     padding-right: 0;
     margin-right: 0;
 }
 
+/*menu*/
 nav {
-    padding: 15px 0;
-
+    padding: 24px 100px 20px;
 }
 .blackground{
-    background: black;
+    background: #070302;
 }
-
-#menu {
+nav{
+float: left;
+}
+nav ul {
     padding: 0;
     font-size: 16px;
-    display: block;
-    float: left;
-
 }
-
-#menu li {
+nav li {
     float: left;
-    display: block;
-    margin-right: 35px;
+    display: inline-block;
+    margin-right: 32px;
 }
-
-#menu a {
-    color: #ffffff;
+nav a {
+    color: #fff;
     text-transform: uppercase;
 }
-
-.left li:hover{
-    border-bottom: solid red;
+nav li :hover {
+    border-bottom: solid #bd2631;
+    color: #bd2631;
 }
-
-
-
-.right {
+.search {
+    padding: 20px 100px 0 0;
     float: right;
+    font-size: 19px;
+    color: #fff;
+    cursor: pointer;
 }
-.fa-search {
-    font-size: 18px;
-    color: #ffffff;
+.search :hover {
+    color: #bd2631;
 }
-*{
+
+/*pictures*/
+
+.pictures {
+    /*max-width: 1400px;*/
+    margin: 0 auto;
+}
+
+.pictureLine1 div, .pictureLine2 div, .pictureLine3 div{
+    height: 452px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float:left;
+
+}
+
+.pic-1{
+    background: url("../img/origin/Pic-1.png") no-repeat #000;
+
+    background-size: cover;
+
+    width: 50%;
+
+}
+.pic-2{
+    background: url("../img/origin/Pic-2.png") no-repeat #fff;
+    background-size: cover;
+    width: 25%;
+
+}
+.pic-3{
+    background: url("../img/origin/Pic-3.png") no-repeat #fff center;
+
+    width: 25%;
+}
+
+.pic-4{
+    background: url("../img/origin/Pic-4.png") no-repeat;
+    background-size: cover;
+    width: 25%;
+
+}
+.pic-5{
+    background: url("../img/origin/Pic-5.png") no-repeat #fff center;
+    width: 25%;
+}
+.pic-6{
+    background: url("../img/origin/Pic-6.png") no-repeat #000;
+    background-size: cover;
+    width: 50%;
+}
+.pic-7{
+    background: url("../img/origin/Pic-7.png") no-repeat #000;
+    background-size: cover;
+    width: 50%;
+}
+.pic-8{
+    background: url("../img/origin/Pic-8.png") no-repeat #f00 center;
+    width: 25%;
+}
+
+.pic-9 {
+    background: url("../img/Pic-9.png") no-repeat;
+    background-size: cover;
+    width: 25%;
+
+}
+h2 {
+
+    color: red;
+    margin: 160px 100px 30px;
+    font-size: 2em;
+}
+
+* {
     /*border: solid red 1px;*/
+}
+.pictures p {
+    color: #fff;
+    margin: 0 100px;
 }
