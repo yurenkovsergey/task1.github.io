@@ -228,34 +228,25 @@ h2 {
     .address-block {
         padding-left: 20px;
     }
-
     .address-block div {
         display: block;
     }
-
     .city {
         width: 110px;
     }
-
     .social {
         padding-right: 20px;
     }
-
     .header-logo {
         padding: 30px 20px 26px;
     }
-
     nav {
         padding-left: 20px;
     }
-
     .search {
         padding-right: 20px;
     }
 }
-
-
-
 
 @media screen and (max-width: 830px) {
     .logo,
