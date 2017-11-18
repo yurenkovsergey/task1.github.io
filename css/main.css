@@ -10,7 +10,7 @@
     clear: both;
 }
 body {
-    font:400 14px/1.5 'Hind';
+    font:400 14px/1.5 "Hind", serif;
     color: #565655;
 }
 
@@ -70,6 +70,10 @@ a:hover{
 .header-logo {
     padding: 30px 100px 26px;
 }
+.logo{
+    float: left;
+}
+
 .second {
     float: right;
     display: block;
@@ -110,13 +114,11 @@ a:hover{
 
 /*menu*/
 nav {
-    padding: 24px 100px 20px;
+    padding: 24px 0 20px 100px;
+    float: left;
 }
 .blackground{
     background: #070302;
-}
-nav{
-float: left;
 }
 nav ul {
     padding: 0;
@@ -210,37 +212,87 @@ nav li :hover {
 h2 {
     color: red;
     margin: 160px 100px 30px;
-    font-size: 2em;
+    font: 30px/1.5 "Hind";
 }
 
-* {
-    /*border: solid red 1px;*/
-}
 .pictures p {
     color: #fff;
     margin: 0 100px;
 }
+* {
+    border: solid red 1px;
+}
 
 /*RESPONSIVE   */
-@media screen and (max-width: 1113px) {
+@media screen and (max-width: 1183px) {
+    .address-block{
+        padding-left: 20px;
+    }
     .address-block div {
         display: block;
     }
-
     .city {
         width: 110px;
     }
+    .social {
+        padding-right: 20px;
+    }
+    .header-logo {
+        padding: 30px 20px 26px;
+    }
+    nav {
+        padding-left: 20px;
+    }
+    .search {
+        padding-right: 20px;
+}
 
+
+
+
+@media screen and (max-width: 830px) {
     .logo,
     .second {
         float: none;
+        text-align: left;
+    }
+    nav li a{
+        /*padding: 24px 10px 16px;*/
+        font-size: 14px;
+    }
+    nav li {
+        margin-right: 15px;
     }
 
-    .header-logo a {
+    .pic-1, .pic-6, .pic-7{
+        width: 100%;
+    }
+    .pic-2, .pic-3, .pic-4, .pic-5, .pic-8, .pic-9 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .second ul li {
+        display: block;
+        margin: 0 0 10px 0;
+        padding: 0;
+        border: none;
+        /*float: none;*/
+        text-align: center;
+    }
+    .logo {
+        padding-left: 0;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .second {
+        width: 100%;
+        margin: 0 auto;
         text-align: center;
     }
 }
-@media screen and (max-width: 760px) {
+}
 
-    }
+
 
