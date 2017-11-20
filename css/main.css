@@ -13,7 +13,6 @@ body {
     font:400 14px/1.5 "Hind", serif;
     color: #565655;
 }
-
 ul{
     list-style: none;
 }
@@ -24,7 +23,6 @@ a{
 a:hover{
     color: #bd2631;
 }
-
 .background1 {
     background: #ededed;
 }
@@ -94,7 +92,6 @@ a:hover{
 .second p > span {
     display: block;
 }
-
 .title {
     color: #000;
     font-weight: 600;
@@ -113,6 +110,11 @@ a:hover{
 }
 
 /*menu*/
+.gamburger-menu{
+    color: #bd2631;
+    font-size: 20px;
+    visibility: hidden;
+}
 nav {
     padding: 24px 0 20px 100px;
     float: left;
@@ -154,14 +156,12 @@ nav li :hover {
     /*max-width: 1400px;*/
     margin: 0 auto;
 }
-
 .pictureLine1 div, .pictureLine2 div, .pictureLine3 div{
     height: 452px;
     display: inline-block;
     margin: 0;
     padding: 0;
     float:left;
-
 }
 
 .pic-1{
@@ -178,12 +178,10 @@ nav li :hover {
     background: url("../img/Pic-3.png") no-repeat #fff center;
     width: 25%;
 }
-
 .pic-4{
     background: url("../img/Pic-4.png") no-repeat;
     background-size: cover;
     width: 25%;
-
 }
 .pic-5{
     background: url("../img/Pic-5.png") no-repeat #fff center;
@@ -214,7 +212,6 @@ h2 {
     margin: 160px 100px 30px;
     font: 30px/1.5 "Hind";
 }
-
 .pictures p {
     color: #fff;
     margin: 0 100px;
@@ -252,16 +249,23 @@ h2 {
     .logo,
     .second {
         float: none;
-        text-align: left;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .second {
+        padding-left: 100px;
+    }
+    .second li {
+        display: inline-block;
+        text-align: center;
     }
     nav li a{
-        /*padding: 24px 10px 16px;*/
         font-size: 14px;
     }
     nav li {
         margin-right: 15px;
     }
-
     .pic-1, .pic-6, .pic-7{
         width: 100%;
     }
@@ -270,26 +274,82 @@ h2 {
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 630px) {
+    .address-block{
+        width: 50%;
+        font-size: 14px;
+    }
     .second ul li {
-        display: block;
-        margin: 0 0 10px 0;
+        margin: 0 auto;
         padding: 0;
         border: none;
-        /*float: none;*/
         text-align: center;
     }
     .logo {
-        padding-left: 0;
-        width: 50%;
-        margin: 0 auto;
-    }
-    .second {
+        padding: 0;
         width: 100%;
         margin: 0 auto;
         text-align: center;
     }
+    .second {
+        padding-left: 50px;
+    }
+    nav {
+        display: none;
+    }
+    .gamburger-menu {
+        padding: 15px;
+        visibility: visible;
+    }
+    .search {
+        padding: 15px;
+    }
 }
+
+
+@media screen and (max-width: 500px) {
+
+    .address-block, .address-block div .social, .city {
+        width: 90%;
+        font-size: 14px;
+        text-align: left;
+    }
+    .city {
+        margin-right: 20px;
+    }
+    .social {
+        display: inline-block;
+        float: none;
+        width: 90%;
+        padding-left: 5px;
+    }
+    .second {
+        padding-left: 20px;
+    }
+    .second ul li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .logo a img{
+        width: 80%;
+        height: auto;
+    }
+    .h2, .pictures p {
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 370px) {
+
+    .pic-1, .pic-2, .pic-3, .pic-4, .pic-5, .pic-6, .pic-7, .pic-8, .pic-9 {
+        width: 100%;
+    }
+    .logo a img{
+        width: 90%;
+        height: auto;
+    }
+}
+
 
 
 
